@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -39,7 +40,7 @@ const Navbar = () => {
             Login
           </Link>
           <Link
-            href="/register"
+            href="/sign-up"
             className="px-4 py-1.5 text-sm bg-black text-white rounded-lg hover:opacity-90 transition"
           >
             Register
@@ -75,7 +76,7 @@ const Navbar = () => {
                 Login
               </Link>
               <Link
-                href="/register"
+                href="/sign-up"
                 className="w-full text-center px-4 py-2 text-sm bg-black text-white rounded-lg hover:opacity-90 transition"
               >
                 Register
