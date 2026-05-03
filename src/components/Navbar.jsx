@@ -19,7 +19,10 @@ const Navbar = () => {
           <Link href="/" className="hover:text-purple-600 transition">
             Home
           </Link>
-          <Link href="/courses" className="hover:text-purple-600 transition">
+          <Link
+            href={"/all-courses"}
+            className="hover:text-purple-600 transition"
+          >
             Courses
           </Link>
           <Link href="/profile" className="hover:text-purple-600 transition">
@@ -56,7 +59,7 @@ const Navbar = () => {
             <Link href="/" className="block text-sm">
               Home
             </Link>
-            <Link href="/courses" className="block text-sm">
+            <Link href={"/all-courses"} className="block text-sm">
               Courses
             </Link>
             <Link href="/profile" className="block text-sm">
