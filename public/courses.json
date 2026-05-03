@@ -7,7 +7,8 @@
     "rating": 4.8,
     "level": "Beginner",
     "description": "Learn full-stack web development from scratch. This comprehensive course covers HTML, CSS, JavaScript, React, Node.js, and MongoDB. You'll build 15+ real-world projects and graduate job-ready.",
-    "image": "https://i.postimg.cc/web-dev-thumb.png",
+    "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=600&auto=format&fit=crop",
+    "imageAlt": "Person coding on a laptop with HTML and JavaScript code on screen",
     "category": "Development",
     "students": 12400,
     "curriculum": [
@@ -33,7 +34,8 @@
     "rating": 4.9,
     "level": "Intermediate",
     "description": "Master user interface and experience design using Figma, Adobe XD, user research methods, wireframing, prototyping, and building scalable design systems used by top companies.",
-    "image": "https://i.postimg.cc/uiux-thumb.png",
+    "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&auto=format&fit=crop",
+    "imageAlt": "Designer working on UI wireframes and design components on a tablet",
     "category": "Design",
     "students": 9800,
     "curriculum": [
@@ -57,7 +59,8 @@
     "rating": 4.7,
     "level": "Beginner",
     "description": "Learn SEO, social media marketing, email campaigns, content marketing, paid ads, and growth hacking strategies used by top digital marketing agencies worldwide.",
-    "image": "https://i.postimg.cc/marketing-thumb.png",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop",
+    "imageAlt": "Digital marketing analytics dashboard showing graphs and social media metrics",
     "category": "Marketing",
     "students": 8200,
     "curriculum": [
@@ -81,7 +84,8 @@
     "rating": 4.8,
     "level": "Intermediate",
     "description": "Master Python programming, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, and machine learning fundamentals. Includes 10 real-world data analysis projects.",
-    "image": "https://i.postimg.cc/python-thumb.png",
+    "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&auto=format&fit=crop",
+    "imageAlt": "Python code and data visualization charts on a computer screen",
     "category": "Data Science",
     "students": 11000,
     "curriculum": [
@@ -105,7 +109,8 @@
     "rating": 4.9,
     "level": "Advanced",
     "description": "Deep dive into React advanced hooks, performance optimization, Server Components, Next.js App Router, streaming, caching, and production deployment strategies.",
-    "image": "https://i.postimg.cc/nextjs-thumb.png",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&auto=format&fit=crop",
+    "imageAlt": "React and Next.js code displayed on a modern development environment",
     "category": "Development",
     "students": 7600,
     "curriculum": [
@@ -129,7 +134,8 @@
     "rating": 4.6,
     "level": "Beginner",
     "description": "Learn typography, color theory, visual composition, grid systems, branding fundamentals and practical skills using Adobe Illustrator, Photoshop and Canva.",
-    "image": "https://i.postimg.cc/graphic-thumb.png",
+    "image": "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&auto=format&fit=crop",
+    "imageAlt": "Colorful graphic design mood board with typography samples and color palettes",
     "category": "Design",
     "students": 6500,
     "curriculum": [
@@ -152,7 +158,8 @@
     "rating": 4.7,
     "level": "Intermediate",
     "description": "Build production-ready RESTful APIs, authentication systems, database integration with MongoDB and PostgreSQL, and deploy with Docker and cloud services.",
-    "image": "https://i.postimg.cc/node-thumb.png",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop",
+    "imageAlt": "Server rack and backend infrastructure representing Node.js server-side development",
     "category": "Development",
     "students": 8900,
     "curriculum": [
@@ -176,7 +183,8 @@
     "rating": 4.5,
     "level": "Beginner",
     "description": "Grow brands and businesses on Instagram, TikTok, Facebook, and LinkedIn using proven organic and paid strategies. Includes content calendar templates and analytics dashboards.",
-    "image": "https://i.postimg.cc/social-thumb.png",
+    "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&auto=format&fit=crop",
+    "imageAlt": "Person scrolling through social media apps on a smartphone showing Instagram and TikTok",
     "category": "Marketing",
     "students": 5400,
     "curriculum": [

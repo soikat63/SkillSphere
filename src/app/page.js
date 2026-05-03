@@ -1,10 +1,12 @@
 import Hero from "@/components/Hero";
+import PopularCourses from "@/components/PopularCourses";
 
 
 const Home = () => {
   return (
     <div>
-      <Hero/>
+      <Hero />
+      <PopularCourses/>
     </div>
   );
 };
