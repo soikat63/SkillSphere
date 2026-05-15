@@ -15,6 +15,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { authClient } from "../../../lib/auth-client";
+import { GrGoogle } from "react-icons/gr";
 
 // --- Eye icons ---
 const EyeIcon = () => (
@@ -71,6 +72,10 @@ const SignUp = () => {
     if (!error) {
       router.push("/");
     }
+  };
+
+  const handleGoogleSignIn = async () => {
+    await authClient.signIn.social({ provider: "google" });
   };
 
   return (
@@ -210,6 +215,15 @@ const SignUp = () => {
             </Button>
           </div>
         </Form>
+
+        {/* --- Google sign in button --- */}
+        <Button
+          onClick={handleGoogleSignIn}
+          className="w-full flex items-center justify-center gap-2.5 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors"
+        >
+          <GrGoogle size={16} />
+          Sign in with Google
+        </Button>
 
         <p className="text-center text-xs text-gray-400 mt-5">
           Already have an account?{" "}

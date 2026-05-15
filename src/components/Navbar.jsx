@@ -2,9 +2,18 @@
 
 import Link from "next/link";
 import { useState } from "react";
-
+import { authClient } from "../../lib/auth-client";
+import { Avatar, Button } from "@heroui/react";
 
 const Navbar = () => {
+  const userData = authClient.useSession();
+  const user = userData?.data?.user;
+  // console.log(user);
+
+  const handleSignOut = async () => {
+    await authClient.signOut();
+  };
+
   const [open, setOpen] = useState(false);
 
   return (
@@ -33,18 +42,33 @@ const Navbar = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex items-center gap-3">
-          <Link
-            href="/login"
-            className="px-4 py-1.5 text-sm border border-black rounded-lg hover:bg-black hover:text-white transition"
-          >
-            Login
-          </Link>
-          <Link
-            href="/sign-up"
-            className="px-4 py-1.5 text-sm bg-black text-white rounded-lg hover:opacity-90 transition"
-          >
-            Register
-          </Link>
+          {!user && (
+            <ul className=" flex items-center text-sm gap-5">
+              <li>
+                <Link href="/login">Login</Link>
+              </li>
+              <li>
+                <Link href="/sign-up"> Register</Link>
+              </li>
+            </ul>
+          )}
+
+          {user && (
+            <div className="flex gap-5 items-center">
+              <Avatar size="sm">
+                <Avatar.Image
+                  alt={user?.name}
+                  src={user?.image}
+                  referrerPolicy="no-referrer"
+                />
+                <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+              </Avatar>
+
+              <Button onClick={handleSignOut} variant="danger" size="sm">
+                SignOut
+              </Button>
+            </div>
+          )}
         </div>
 
         {/* Hamburger */}
