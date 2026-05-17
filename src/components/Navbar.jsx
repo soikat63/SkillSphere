@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { authClient } from "../../lib/auth-client";
 import { Avatar, Button } from "@heroui/react";
+import Image from "next/image";
 
 const Navbar = () => {
   const userData = authClient.useSession();
@@ -17,11 +18,11 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white/80 backdrop-blur sticky top-0 z-50 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <nav className="w-full bg-white/80 backdrop-blur py-5 sticky top-0 z-50 shadow-sm">
+      <div className="max-w-7xl mx-auto  flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold text-black">
-          SkillSphere
+        <Link href="/" >
+          <Image src="/SkilSpher Brand Logo.png" alt="Brand Logo " width={150} height={50} />
         </Link>
 
         {/* Desktop Menu */}
@@ -43,9 +44,9 @@ const Navbar = () => {
         {/* Desktop Buttons */}
         <div className="hidden md:flex items-center gap-3">
           {!user && (
-            <ul className=" flex items-center text-sm gap-5">
+            <ul className=" flex items-center text-lg gap-5">
               <li>
-                <Link href="/login">Login</Link>
+                <Link href="/login" className=" py-2 px-6 bg-blue-400 border ">Login</Link>
               </li>
               <li>
                 <Link href="/sign-up"> Register</Link>

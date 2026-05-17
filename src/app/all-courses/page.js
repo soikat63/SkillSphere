@@ -7,14 +7,12 @@ const AllCoursePage = async ({ searchParams }) => {
   const selectedCategory = params?.category;
   const searchQuery = params?.search?.toLowerCase() || "";
 
-  const res = await fetch(
-    "https://skill-sphere-ruby-two.vercel.app/courses.json",
-  );
+  const res = await fetch("https://skil-shape-server.vercel.app/");
   const allCourses = await res.json();
 
-  const categories = [...new Set(allCourses.map((course) => course.category))];
+  const categories = [...new Set(allCourses.data.map((course) => course.category))];
 
-  const filteredCourses = allCourses
+  const filteredCourses = allCourses.data
     .filter((course) =>
       selectedCategory
         ? course?.category?.toLowerCase() === selectedCategory.toLowerCase()

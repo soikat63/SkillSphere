@@ -4,10 +4,10 @@ import { GoArrowRight } from "react-icons/go";
 import Link from "next/link";
 
 const PopularCourses = async () => {
-  const res = await fetch("https://skill-sphere-ruby-two.vercel.app/courses.json");
+  const res = await fetch("https://skil-shape-server.vercel.app");
   const courses = await res.json();
-  const courseSlice = await courses.slice(0, 3);
-  //   console.log(courses);
+  const courseSlice = await courses.data.slice(0, 3);
+    // console.log(courses);
 
   return (
     <div className=" mt-16">
